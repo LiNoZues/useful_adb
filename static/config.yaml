@@ -1,0 +1,50 @@
+monkey_interval: 500
+monkey_run_time: 60
+name: hello_kity
+net: wifi
+project: 测试工程
+TEST_install: False
+TEST_Launch: False
+MONKEY_START: Flase
+NEED_INIT: False
+packageName: com.zztzt.huaxin
+activity: com.newtzt.activity.tztZZHeadPageActivity
+launch:
+  packageName: com.zztzt.huaxin
+  activity: com.newtzt.activity.tztZZHeadPageActivity
+  hot: 12
+  cold: 12
+operation:
+  -
+    id: 1
+    text: 同意
+    op: 点击
+    count: 1
+  -
+    id: 2
+    text:
+    op: 等待
+    count: 1
+    time: 3
+  -
+    id: 3
+    text:
+    op: 左滑
+    count: 2
+  -
+    id: 4
+    text: 立即体验
+    op: 点击
+    count: 1
+
+  - id: 5
+    text: 知道了
+    op: 点击
+    count: 1
+
+  - id: 5
+    textContains: 知道了
+    op: 点击
+    count: 1
+
+
